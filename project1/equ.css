@@ -1,0 +1,92 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: dimgray;
+}
+
+.equipment-section {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.equipment-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.equipment-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.equipment-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.equipment-image {
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.equipment-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.equipment-card:hover .equipment-image img {
+    transform: scale(1.1);
+}
+
+.equipment-info {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.equipment-info h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #333;
+}
+
+.equipment-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+.equipment-info .price {
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.equipment-card:hover .equipment-info h3 {
+    color: #e67e22;
+}

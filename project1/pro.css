@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    
+    
+}
+#navigation{
+    display: flex;
+    
+}
+ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 10px 10px 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 20px;
+
+}
+    
+    a:hover{
+    color:black;
+    background-color:white;
+    border-radius: 40px;
+    transition: ease-in-out 0.5;
+}
+#top-h{
+    display: block;
+    margin-top: 180px;
+
+}
+
+#top-h h1{
+    color: bisque;
+    font-size: 90px;
+    opacity: 20%;
+}
+
+.hero-mp4 {
+    position: relative;
+    width: 100%;
+    height:max-content;
+    overflow: hidden; 
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    object-fit:cover; 
+    opacity: 0.2; 
+    z-index: -1; 
+
+}
+
+
+ p{
+    margin-left: 10px;
+    color: wheat;
+    font-size: 30px;
+    opacity: 0.4;
+}
+p::after{
+    content: "𝔾ℝ𝔼𝔼𝕂 𝔾𝕆𝔻";
+    background: linear-gradient(to right and left, #d7ff8c, #282e05);
+    color: gold;
+}
+
+button{
+    margin-top: 20px;
+    padding: 20px 40px 20px 40px;
+    margin-left: 150px;
+    border-radius: 10px;
+    background-color: #333;
+    opacity: 0.1;
+    color: white;
+    font-size: 20px;
+}
+button:hover{
+    cursor:pointer;
+    opacity: 1.5;   
+
+    
+}
+

@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fdf5f1, #ffdada);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.contact-section {
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-section:hover {
+    transform: scale(1.05);
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-group input:hover, 
+.form-group textarea:hover {
+    border-color: #ff5e62;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #ff9966;
+    outline: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #ff5e62;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff9966;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #e64a4f;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+}
